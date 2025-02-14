@@ -66,7 +66,7 @@ st.markdown(
     /* Estiliza as abas para aumentar a fonte e deixar o texto branco */
     div[data-testid="stTabs"] button {{
         font-size: 20px !important; /* Tamanho maior */
-        color: white !important; /* Texto branco */
+        color: yellow !important; /* Texto branco */
     }}
     </style>
     """,
