@@ -133,12 +133,16 @@ def main():
             if documentos:
                 db.collection(nome_da_colecao).add({
                     'docente': docente,
+                    'orcid': ORCID,
+                    'lab': lab,
                     'extensao': extensao,
-                    'insercaosocial': insercao_social,
-                    'colaboracaointernacional': colaboracao_internacional,
+                    'pesquisa': pesquisa,
+                    'sociedadescientificas': sociedadescientificas,
                     'colaboracaonacional': colaboracao_nacional,
-                    'inovacao': inovacao
-                })
+                    'colaboracaointernacional': colaboracao_internacional,
+                    'inovacao': inovacao,
+                    'insercaosocial': insercao_social
+                    })
 
                 st.success('Dados cadastrados com sucesso')
                 st.balloons()
