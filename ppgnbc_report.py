@@ -106,18 +106,24 @@ def main():
 
     with tab3:
         docente = st.text_input('Nome do docente')
-
+        ORCID = st.text_input('ORCID')
+        lab = st.text_input('Nome do laboratório')
+        
         extensao = st.text_area(
-            "Indique se tem atuado em ações de extensão, quais ações e se há participações de discentes do PPGNBC")
-        insercao_social = st.text_area(
-            "Indique se tem atuado em ações na sociedade, quais ações e se há participações de discentes do PPGNBC")
-        colaboracao_internacional = st.text_area(
-            "Indique se tem atuado em colaborações internacionais de pesquisa, quais colaborações e se há participações de discentes do PPGNBC")
+            "Indique se tem atuado em projetos de extensão, quais projetos e se há participação de discentes do PPGNBC")
+        pesquisa = st.text_area(
+            "Indique se tem atuado em projetos de pesquisa, quais projetos e se há participação de discentes do PPGNBC")
+        sociedadescientificas = st.text_area(
+            "Indique se tem atuado em Sociedades Científicas")
         colaboracao_nacional = st.text_area(
             "Indique se tem atuado em colaborações nacionais de pesquisa, quais colaborações e se há participações de discentes do PPGNBC")
+        colaboracao_internacional = st.text_area(
+            "Indique se tem atuado em colaborações internacionais de pesquisa, quais colaborações e se há participações de discentes do PPGNBC")
         inovacao = st.text_area(
-            "Indique se tem atuado em inovação técnica/tecnológica, quais inovações foram e se há participações de discentes do PPGNBC")
-
+            "Indique se tem atuado em inovação técnica/tecnológica, quais inovações e se há participações de discentes do PPGNBC")
+        insercao_social = st.text_area(
+            "Indique se tem atuado em ações na sociedade, quais ações e se há participações de discentes do PPGNBC")
+        
         submeter = st.button('Inserir dados')
 
         if submeter:
